@@ -2,17 +2,17 @@
 
 ## Starting a new `Meteor + React` app
 
-    meteor npm install --save react react-dom
-    meteor add static-html
-    meteor remove blaze-html-templates
-    meteor add accounts-ui accounts-password
-    meteor npm install --save bcrypt
-    meteor add react-meteor-data
-    npm install react-meta-tags --save
-    meteor remove insecure, autopublish
-    meteor npm install --save classnames react-router history
-    meteor add meteortesting:mocha
-    meteor npm install --save-dev chai
+  meteor npm install --save react react-dom
+  meteor add static-html
+  meteor remove blaze-html-templates
+  meteor add accounts-ui accounts-password
+  meteor npm install --save bcrypt
+  meteor add react-meteor-data
+  npm install react-meta-tags --save
+  meteor remove insecure, autopublish
+  meteor npm install --save classnames react-router history
+  meteor add meteortesting:mocha
+  meteor npm install --save-dev chai
 
 ## Setting up meteor for android
 
@@ -34,11 +34,11 @@
 
 1. Add the following lines. This creates some environment variables and modifies the path.
 
-        export GRADLE_HOME="/home/<device_name>/gradle-5.0"
-        export PATH=$PATH:$GRADLE_HOME/bin
-        export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/bin/java"
-        export ANDROID_HOME="/home/<device_name>/Android/Sdk"
-        export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+  export GRADLE_HOME="/home/<device_name>/gradle-5.0"
+  export PATH=$PATH:$GRADLE_HOME/bin
+  export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/bin/java"
+  export ANDROID_HOME="/home/<device_name>/Android/Sdk"
+  export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 ## Common errors and resolution
 
@@ -157,9 +157,9 @@ Installation `meteor add cordova:cordova-plugin-nativestorage@2.3.2`
 ```javascript
 // open external urls
 // Setting {type: 'intent'} asks the user which app to use for opening the link while {type: 'navigation'} opens the link in-app
-App.accessRule('http://*', {type: 'intent'});
-App.accessRule('https://*', {type: 'intent'});
-App.accessRule('skype:*', {type: 'intent'})
+App.accessRule("http://*", { type: "intent" });
+App.accessRule("https://*", { type: "intent" });
+App.accessRule("skype:*", { type: "intent" });
 
 // statusbar https://www.npmjs.com/package/cordova-plugin-statusbar
 App.appendToConfig(`
@@ -179,8 +179,8 @@ App.appendToConfig(`
 1. You may ignore following two steps
 1. When process is done you may get the following message
 
-        Warning:
-        The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore <path-to-keystore-file>\.keystore -destkeystore <path-to-keystore-file>\.keystore -deststoretype pkcs12".
+  Warning:
+  The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore <path-to-keystore-file>\.keystore -destkeystore <path-to-keystore-file>\.keystore -deststoretype pkcs12".
 
     Where `-srckeystore` is the source keystore, `-destkeystore` is the destination keystore, and `-deststoretype` is the destination keystore format. This action **Replaces** the old .keystore file.
 
@@ -204,6 +204,6 @@ App.appendToConfig(`
 1. Edit `package.json` and `npm-shrinkwrap.json` and replace jquery version with 2.2.4
 1. Delete `node_modules/` and re-install the following packages
 
-        meteor npm install
-        meteor remove twbs:boostrap jquery
-        meteor npm install --save bootstrap jquery
+  meteor npm install
+  meteor remove twbs:boostrap jquery
+  meteor npm install --save bootstrap jquery

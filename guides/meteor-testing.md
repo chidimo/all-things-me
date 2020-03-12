@@ -2,7 +2,7 @@
 
 ## Resources
 
-1. <https://github.com/meteortesting/meteor-mocha/blob/master/README.md#run-app-tests>
+1.  <https://github.com/meteortesting/meteor-mocha/blob/master/README.md#run-app-tests>
 
         setx TEST_WATCH 1
         meteor test --driver-package meteortesting:mocha
@@ -15,43 +15,41 @@
 
 create a top-level `.babelrc` file and populate it with
 
-```babel
+```json
 {
-    "presets" : ["@babel/preset-react", "@babel/preset-env",]
+    "presets": ["@babel/preset-react", "@babel/preset-env"]
 }
-
 ```
 
 create a `tests/setup.js` file and populate it with
 
-
 ```javascript
 /* setup.js */
 
-const { JSDOM } = require('jsdom');
+const { JSDOM } = require("jsdom");
 
-const jsdom = new JSDOM('<!doctype html><html><body></body></html>');
+const jsdom = new JSDOM("<!doctype html><html><body></body></html>");
 const { window } = jsdom;
 
 function copyProps(src, target) {
-  Object.defineProperties(target, {
-    ...Object.getOwnPropertyDescriptors(src),
-    ...Object.getOwnPropertyDescriptors(target),
-  });
+    Object.defineProperties(target, {
+        ...Object.getOwnPropertyDescriptors(src),
+        ...Object.getOwnPropertyDescriptors(target)
+    });
 }
 
 global.window = window;
 global.document = window.document;
 global.navigator = {
-  userAgent: 'node.js',
+    userAgent: "node.js"
 };
-global.requestAnimationFrame = function (callback) {
+global.requestAnimationFrame = function(callback) {
     return setTimeout(callback, 0);
 };
-global.cancelAnimationFrame = function (id) {
-  clearTimeout(id);
+global.cancelAnimationFrame = function(id) {
+    clearTimeout(id);
 };
 copyProps(window, global);
 
-console.log("Setup ready")
+console.log("Setup ready");
 ```

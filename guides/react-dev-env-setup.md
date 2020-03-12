@@ -10,8 +10,10 @@
 
 1. Create `.babelrc` with the following content
 
-        {
-            "presets": ["@babel/preset-env", "@babel/preset-react"]
-        }
+```json
+  {
+      "presets": ["@babel/preset-env", "@babel/preset-react"]
+  }
+```
 
 1. Setup CI/CD with `.coveralls.yml` and `.travis.yml`. [Instructions](express-setup.md#test-and-cicd)

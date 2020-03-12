@@ -8,30 +8,32 @@ When you have that working, modify your program to print "FizzBuzz" for numbers 
 
 ```javascript
 function fizzBuzz() {
-    for (let i = 1; i <= 100; i ++) {
-         if (i % 3 === 0 && i % 5 === 0) {
-            console.log(`FizzBuzz:  ${i}`)
-        } else if (i % 3 === 0) {
-            console.log(`Fizz: ${i}`)
-        } else if (i % 5 === 0) {
-            console.log(`Buzz: ${i}`)
-        } else {
-            console.log(i)
-        }
+  for (let i = 1; i <= 100; i ++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`FizzBuzz:  ${i}`)
+    } else if (i % 3 === 0) {
+        console.log(`Fizz: ${i}`)
+    } else if (i % 5 === 0) {
+        console.log(`Buzz: ${i}`)
+    } else {
+        console.log(i)
     }
+  }
 }
 fizzBuzz()
 ```
 
 Write a loop that makes seven calls to console.log to output the following triangle:
 
-    #
-    ##
-    ###
-    ####
-    #####
-    ######
-    #######
+```cmd
+  #
+  ##
+  ###
+  ####
+  #####
+  ######
+  #######
+```
 
 ```javascript
 let tree = ""
@@ -45,37 +47,39 @@ Write a program that creates a string that represents an 8×8 grid, using newlin
 
 Passing this string to console.log should show something like this:
 
-    #-#-#-#-#
-    -#-#-#-#
-    #-#-#-#-#
-    -#-#-#-#
-    #-#-#-#-#
-    -#-#-#-#
-    #-#-#-#-#
-    -#-#-#-#
+```cmd
+  #-#-#-#-#
+  -#-#-#-#
+  #-#-#-#-#
+  -#-#-#-#
+  #-#-#-#-#
+  -#-#-#-#
+  #-#-#-#-#
+  -#-#-#-#
+```
 
 When you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
 
 ```javascript
 function makeGrid(width, height) {
 
-    // vertical
-    for (let j = 1; j <= height; j ++) {
-        if (j % 2 === 0) { // set the start string
-            st = ""
-        }else {
-            st = "#"
-        }
-        // Horizontal lines
-        for (let i = 1; i <= width; i ++) {
-            if (i % 2 === 0) {
-                st = st + "#"
-            }else {
-                st = st + "-"
-            }
-        }
-        console.log(st)
+  // vertical
+  for (let j = 1; j <= height; j ++) {
+    if (j % 2 === 0) { // set the start string
+      st = ""
+    }else {
+      st = "#"
     }
+    // Horizontal lines
+    for (let i = 1; i <= width; i ++) {
+      if (i % 2 === 0) {
+          st = st + "#"
+      }else {
+          st = st + "-"
+      }
+    }
+    console.log(st)
+  }
 }
 makeGrid(8, 8)
 ```
@@ -84,9 +88,11 @@ makeGrid(8, 8)
 
 We’ve seen that `%` (the remainder operator) can be used to test whether a number is even or odd by using `% 2` to see whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:
 
-    Zero is even.
-    One is odd.
-    For any other number N, its evenness is the same as N - 2.
+```cmd
+  Zero is even.
+  One is odd.
+  For any other number N, its evenness is the same as N - 2.
+```
 
 Define a recursive function `isEven` corresponding to this description. The function should accept a single parameter (a positive, whole number) and return a Boolean.
 
@@ -469,6 +475,3 @@ console.log(every([], n => n < 10)); // → true
 Write a function that computes the dominant writing direction in a string of text. Remember that each script object has a direction property that can be "ltr" (left to right), "rtl" (right to left), or "ttb" (top to bottom).
 
 The dominant direction is the direction of a majority of the characters that have a script associated with them. The `characterScript` and `countBy` functions defined earlier in the chapter are probably useful here.
-
-```javascript
-```

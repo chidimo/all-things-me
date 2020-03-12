@@ -1,6 +1,0 @@
-# CI/CD
-
-## Travis
-
-## AppVeyor
-

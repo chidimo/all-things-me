@@ -14,18 +14,13 @@
 
 ## Guides
 
-1. [angular](guides/angular.md)
-1. [author-amend](guides/author-amend.md)
-1. [ci-cd](guides/ci-cd.md)
 1. [css](guides/css.md)
 1. [deployment](guides/deployment.md)
 1. [eloquent-javascript](guides/eloquent-javascript.md)
 1. [es6](guides/es6.md)
-1. [express-api-app-setup](guides/express-api-app-setup.md)
-1. [express-setup](guides/express-setup.md)
 1. [git](guides/git.md)
 1. [install-uninstall](guides/install-uninstall.md)
-1. [javascript](guides/javascript.md)
+1. [javascript-understanding-the-weird-parts](guides/javascript-understanding-the-weird-parts.md)
 1. [js-dev-env-setup](guides/js-dev-env-setup.md)
 1. [js-practice-questions](guides/js-practice-questions.md)
 1. [meteor-builds](guides/meteor-builds.md)
@@ -41,7 +36,6 @@
 1. [react-dev-env-setup](guides/react-dev-env-setup.md)
 1. [react-native](guides/react-native.md)
 1. [react-notes](guides/react-notes.md)
-1. [react-nuggets](guides/react-nuggets.md)
 1. [redux-notes](guides/redux-notes.md)
 1. [relational-model](guides/relational-model.md)
 1. [sass](guides/sass.md)

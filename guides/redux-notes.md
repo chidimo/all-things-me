@@ -7,11 +7,11 @@
 
 1. ways of interacting with state tree
 
-		Getting the state
+	Getting the state
 
-		Listening for state changes
+	Listening for state changes
 
-		Updating the state
+	Updating the state
 ```
 
 ## Store rules
@@ -29,6 +29,6 @@
 
 1. `store` An object that keeps track of our state
 1. `Action` A state manipulation function that is called by a component
-1. `Reducer` A function that applies an action to the state and returns a new updated *copy* of the state. `reducer(previous-state, action) --> new-state`. Reducers are passed to the store during store initialization.
+1. `Reducer` A function that applies an action to the state and returns a new updated _copy_ of the state. `reducer(previous-state, action) --> new-state`. Reducers are passed to the store during store initialization.
 1. `subscribe` A store function that provides a way to listen on state changes within the store.
 1. `dispatch` A store function that provides a way to pass an action to the store.

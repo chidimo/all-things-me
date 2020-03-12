@@ -2,8 +2,6 @@
 
 ## `React` App on Heroku
 
-### Resources
-
 1. <https://blog.heroku.com/deploying-react-with-zero-configuration>
 1. <https://medium.com/jeremy-gottfrieds-tech-blog/tutorial-how-to-deploy-a-production-react-app-to-heroku-c4831dfcfa08>
 
@@ -12,8 +10,6 @@
 1. heroku open
 
 ## `Meteor` App on Heroku
-
-### Resources
 
 1. <https://medium.com/@leonardykris/how-to-run-a-meteor-js-application-on-heroku-in-10-steps-7aceb12de234>
 1. <https://medium.com/@philipaffulnunoo/how-to-deploy-meteor-1-4-app-to-aws-ec2-in-2017-bfea1a7c308a>
@@ -30,10 +26,7 @@
 1. `heroku config:add ROOT_URL=https://<desired app name>.herokuapp.com`
 1. `git push heroku master`
 
-
 ## `Django` App on Heroku
-
-### Resources
 
 1. <https://devcenter.heroku.com/categories/working-with-django>
 1. <https://gearheart.io/blog/how-to-deploy-a-django-application-on-heroku/>
